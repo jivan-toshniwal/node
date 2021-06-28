@@ -24,6 +24,7 @@
     <ProjectGuid>{0faed3b9-5ffb-4fae-9663-81a9511784fc}</ProjectGuid>
     <RootNamespace>node</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Inheritance</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,11 +140,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Account.cpp" />
+    <ClCompile Include="Account_Util.cpp" />
     <ClCompile Include="node.cpp" />
-    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Savings_Account.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Player.h" />
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="Account_Util.h" />
+    <ClInclude Include="Savings_Account.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
